@@ -27,7 +27,13 @@ if (answerTwo === 'no' || answerTwo === 'n') {
 
 var answerThree = prompt('What').toLowerCase();
 
-
+if (answerTwo === 'yes' || answerTwo === 'y') {
+    alert('Fantastic!');
+    console.log('The user got question 3 correct.');
+} else {
+    alert('To think I thought you\'d get that one right...');
+    console.log('The user answered question 3 incorrectly');
+}
 var answerFour = prompt('When').toLowerCase();
 
 
