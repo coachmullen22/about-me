@@ -17,7 +17,7 @@ if (answerOne === 'yes' || answerOne === 'y') {
 
 var answerTwo = prompt('Who').toLowerCase();
 
-if (answerTwo === 'yes' || answerTwo === 'y') {
+if (answerTwo === 'no' || answerTwo === 'n') {
     alert('Good answer.');
     console.log('The user got question 2 correct');
 } else {
