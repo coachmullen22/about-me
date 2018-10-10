@@ -1,4 +1,17 @@
 body {
     background: rgba(65, 33, 124, 0.445);
-    color: rgb(218, 197, 9)
-  }
+    color: rgb(218, 197, 9);
+    text-align: center;
+}
+
+h1 p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
