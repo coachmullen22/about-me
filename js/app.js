@@ -47,7 +47,7 @@ if (answerFour === 'yes' || answerFour === 'y') {
 var answerFive = prompt('Why').toLowerCase();
 
 if (answerFive === 'no' || answerFive === 'n') {
-    alert('');
+    alert('Way to finish strong!');
     console.log('The user got question 5 correct, although maybe they cheated...');
 } else {
     alert('On a scale of 1 to 10, you got this one wrong.');
