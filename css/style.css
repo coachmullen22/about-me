@@ -1,17 +1,17 @@
-body {
+body header {
     background: rgba(52, 19, 112, 0.37);
     color: rgb(56, 15, 15);
     outline-color: rgb(153, 56, 11);
     margin: 50px, 50px;
 }
 
-h1 p {
+header p {
     text-align: center;
     border: 50px, 50px;
     padding: 50px, 50px;
 }
 
-h1 {
+header {
     border-style: double;
     border-color: blue;
     border-width; 10px;

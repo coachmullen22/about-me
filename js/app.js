@@ -27,18 +27,18 @@ if (homeRun === 'no' || homeRun === 'n') {
   console.log('The user got question 2 wrong.');
 }
 
-var answerThree = prompt('Are the Mariners my favorite MLB team?').toLowerCase();
+var marinersFan = prompt('Are the Mariners my favorite MLB team?').toLowerCase();
 
-if (answerThree === 'yes' || answerThree === 'y') {
+if (marinersFan === 'yes' || marinersFan === 'y') {
   alert('Of course they are. They are forever my favorite team!');
   console.log('The user got question 3 correct.');
 } else {
   alert('I was convinced you\'d get that one right but it seems we were both very wrong.');
   console.log('The user answered question 3 incorrectly');
 }
-var answerFour = prompt('Am I right-handed?').toLowerCase();
+var rightHanded = prompt('Am I right-handed?').toLowerCase();
 
-if (answerFour === 'yes' || answerFour === 'y') {
+if (rightHanded === 'yes' || rightHanded === 'y') {
   alert('"Truly, you have a dizzying intellect."');
   console.log('The user got question 4 correct.');
 } else {
@@ -46,9 +46,9 @@ if (answerFour === 'yes' || answerFour === 'y') {
   console.log('The user got question 4 wrong.');
 }
 
-var answerFive = prompt('Is it ever possible to overquote, "The Princess Bride"?').toLowerCase();
+var princessBride = prompt('Is it ever possible to overquote, "The Princess Bride"?').toLowerCase();
 
-if (answerFive === 'no' || answerFive === 'n') {
+if (princessBride === 'no' || princessBride === 'n') {
   alert('"Let me explain...no, there is too much. Let me sum up..." You\'re absolutely right!');
   console.log('The user got question 5 correct, although it is possible they cheated...');
 } else {
