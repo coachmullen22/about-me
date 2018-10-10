@@ -1,56 +1,58 @@
 'use strict';
-alert('Welcome!');
+alert('Welcome, my friend!');
 
 var username = prompt('What is your name?');
 
-alert('Hello ' + username + '. Guess what? If you answer the following 5 questions I promise your life will be enriched. To get the best results, please answer with either a "yes" or a "no". Or if you need to save your strength for the coding you\'ll be doing later, just type "y" or "n".');
+alert('Well hello ' + username + '. Guess what? If you answer the following 5 questions I promise your life will be enriched.');
 
-var answerOne = prompt('Am I nice').toLowerCase();
+alert('To get the best results, please answer with either a "yes" or a "no". Or if you need to save your strength for all the shredding you\'ll be doing later, just type "y" or "n".');
 
-if (answerOne === 'yes' || answerOne === 'y') {
-    alert('That\'s correct!');
-    console.log('The user got question 1 correct.');
+var ballPlayer = prompt('Let\'s start easy. Do I look like a baseball player?').toLowerCase();
+
+if (ballPlayer === 'yes' || ballPlayer === 'y') {
+  alert('You\'re right! My favorite place in the world is on the diamond!');
+  console.log('The user got question 1 correct.');
 } else {
-    alert('Wrong!');
-    console.log('The user got question 1 wrong.');
+  alert('I may have lost a step but c\'mon, do I not look like a leadoff hitter?');
+  console.log('The user got question 1 wrong.');
 }
 
-var answerTwo = prompt('Who').toLowerCase();
+var homeRun = prompt('Did I ever hit a homerun in my high school playing days?').toLowerCase();
 
-if (answerTwo === 'no' || answerTwo === 'n') {
-    alert('Good answer.');
-    console.log('The user got question 2 correct');
+if (homeRun === 'no' || homeRun === 'n') {
+  alert('Good answer, ' + username + '. My game was all speed and defense.');
+  console.log('The user got question 2 correct');
 } else {
-    alert('Incorrect!');
-    console.log('The user got question 2 wrong.');
+  alert('No, I hit a few legit bombs later in life, but I was scrawny in high school.');
+  console.log('The user got question 2 wrong.');
 }
 
-var answerThree = prompt('What').toLowerCase();
+var answerThree = prompt('Are the Mariners my favorite MLB team?').toLowerCase();
 
-if (answerTwo === 'yes' || answerTwo === 'y') {
-    alert('Fantastic!');
-    console.log('The user got question 3 correct.');
+if (answerThree === 'yes' || answerThree === 'y') {
+  alert('Of course they are. They are forever my favorite team!');
+  console.log('The user got question 3 correct.');
 } else {
-    alert('To think I thought you\'d get that one right...');
-    console.log('The user answered question 3 incorrectly');
+  alert('I was convinced you\'d get that one right but it seems we were both very wrong.');
+  console.log('The user answered question 3 incorrectly');
 }
-var answerFour = prompt('When').toLowerCase();
+var answerFour = prompt('Am I right-handed?').toLowerCase();
 
 if (answerFour === 'yes' || answerFour === 'y') {
-    alert('Truly, you have a dizzying intellect.');
-    console.log('The user got question 4 correct.');
+  alert('"Truly, you have a dizzying intellect."');
+  console.log('The user got question 4 correct.');
 } else {
-    alert('Why am I smiling? Because I know someting you do not know...I am not left-handed');
-    console.log('The user got question 4 wrong.');
+  alert('Why am I smiling? "Because I know something you do not know...I am not left-handed."');
+  console.log('The user got question 4 wrong.');
 }
 
-var answerFive = prompt('Why').toLowerCase();
+var answerFive = prompt('Is it ever possible to overquote, "The Princess Bride"?').toLowerCase();
 
 if (answerFive === 'no' || answerFive === 'n') {
-    alert('Way to finish strong!');
-    console.log('The user got question 5 correct, although maybe they cheated...');
+  alert('"Let me explain...no, there is too much. Let me sum up..." You\'re absolutely right!');
+  console.log('The user got question 5 correct, although it is possible they cheated...');
 } else {
-    alert('On a scale of 1 to 10, you got this one wrong.');
-    console.log('The user got question 5 incorrect.');
+  alert('"Inconceivable!" You are clearly wrong on this point.');
+  console.log('The user got question 5 incorrect.');
 }
-
+alert('Now wasn\'t that an enriching experience? Haha, maybe we should let that be a rhetorical question!');
