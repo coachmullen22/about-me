@@ -54,4 +54,3 @@ if (answerFive === 'no' || answerFive === 'n') {
     console.log('The user got question 5 incorrect.');
 }
 
-alert('Now wasn\'t that an enriching experience? Haha, I think I\'ll leave that as a rhetorical question!');
