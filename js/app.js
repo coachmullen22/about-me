@@ -55,7 +55,7 @@ q2();
 
 //Q3
 
-
+function q3() {
 var marinersFan = prompt('Are the Mariners my favorite MLB team?').toLowerCase();
 
 if (marinersFan === 'yes' || marinersFan === 'y') {
@@ -84,6 +84,10 @@ if (rightHanded === 'yes' || rightHanded === 'y') {
   console.log('The user got question 4 wrong.');
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 }
+}
+q3();
+
+//Q4
 
 var princessBride = prompt('Is it ever possible to overquote, "The Princess Bride"?').toLowerCase();
 
