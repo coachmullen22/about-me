@@ -13,7 +13,9 @@ var username = prompt('What is your name?');
 alert('Well hello, ' + username + '. Guess what? If you answer the following 7 questions I promise your life will be enriched.');
 
 alert('To get the best results, please answer with either a "yes" or a "no". Or if you need to save your strength for all the shredding you\'ll be doing later, just type "y" or "n".');
+// Q1
 
+function q1() {
 var ballPlayer = prompt('Let\'s start easy. Do I look like a baseball player?').toLowerCase();
 
 if (ballPlayer === 'yes' || ballPlayer === 'y') {
@@ -28,6 +30,8 @@ if (ballPlayer === 'yes' || ballPlayer === 'y') {
   console.log('The user got question 1 wrong.');
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 }
+} 
+q1();
 
 var homeRun = prompt('Did I ever hit a homerun in my high school playing days?').toLowerCase();
 
