@@ -2,7 +2,7 @@
     border: 2px solid red;
     border-width: 2px;
 }
-/*
+
 body header {
     background: rgba(52, 19, 112, 0.37);
     color: rgb(56, 15, 15);
@@ -32,6 +32,14 @@ p {
 
 li {
     font-size: 18px;
-    border: 40px, 40px;
+    border: 1px solid black;
     padding: 5px, 5px;
+    list-style-position: inside;
+}
+ol{
+    list-style: decimal;
+
+}
+ul{
+    list-style: circle;
 }
