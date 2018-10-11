@@ -156,6 +156,7 @@ console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAs
 
 //Question #7
 
+function q7() {
 guessesLeft = 6;
 var guessNum = 0;
 
@@ -184,6 +185,9 @@ while (guessesLeft > 0) {
     alert('Never mind. In the immortal words of En Vogue, "you\'re never gonna get it." The teams whose stadiums I\'ve visited are the Athletics, Brewers, Cardinals, Giants, Indians, Padres, White Sox, Yankees, and most belovedly, the Cubs. Go Cubs, Go!')
   }
 }
+}
+q7();
+
 questionsAsked++;
 console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 
