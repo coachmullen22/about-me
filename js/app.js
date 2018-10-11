@@ -69,7 +69,13 @@ if (marinersFan === 'yes' || marinersFan === 'y') {
   questionsAsked++;
   console.log('The user answered question 3 incorrectly');
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
-}
+} 
+} 
+q3();
+
+//Q4
+
+function q4(){
 var rightHanded = prompt('Am I right-handed?').toLowerCase();
 
 if (rightHanded === 'yes' || rightHanded === 'y') {
@@ -85,11 +91,11 @@ if (rightHanded === 'yes' || rightHanded === 'y') {
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 }
 }
-q3();
+q4();
 
-//Q4
+//Q5
 
-function q4() {
+function q5() {
 var princessBride = prompt('Is it ever possible to overquote, "The Princess Bride"?').toLowerCase();
 
 if (princessBride === 'no' || princessBride === 'n') {
@@ -105,7 +111,7 @@ if (princessBride === 'no' || princessBride === 'n') {
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 }
 }
-q4();
+q5();
 
 
 //alert('Now wasn\'t that an enriching experience? Haha, maybe we should let that be a rhetorical question!');
