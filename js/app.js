@@ -10,7 +10,7 @@ alert('Welcome, my friend!');
 
 var username = prompt('What is your name?');
 
-alert('Well hello, ' + username + '. Guess what? If you answer the following 5 questions I promise your life will be enriched.');
+alert('Well hello, ' + username + '. Guess what? If you answer the following 7 questions I promise your life will be enriched.');
 
 alert('To get the best results, please answer with either a "yes" or a "no". Or if you need to save your strength for all the shredding you\'ll be doing later, just type "y" or "n".');
 
@@ -102,18 +102,18 @@ console.log(stadiumTally);
 //Question #6
 
 while (guessesLeft > 0) {
-  var guessTally = parseInt(prompt('Obviously, I love baseball. Can you guess how many Major League Stadiums I\'ve visited (outside of Seattle)? I\'ll give you 4 chances.'));
+  var guessTally = parseInt(prompt('Obviously, I love baseball. Can you guess how many Major League Stadiums I\'ve visited (outside of Seattle)? You\'ve got ' + guessesLeft + ' chances.'));
   guessesLeft--;
 
   if (guessTally > 100 || guessTally < 1 || isNaN(guessTally)) {
     guessesLeft++;
-    alert('I think you made a mistake. Try a number between 1 and 100. You have ' + guessesLeft + ' remaining.');
+    alert('I think you made a mistake. Try a number between 1 and 100. You still have ' + guessesLeft + ' guesses.');
   }
   else if (guessTally > stadiumTally) {
-    alert('I wish! That\'s a little high though. Try a smaller number. You have ' + guessesLeft + ' remaining.');
+    alert('I wish! That\'s a little high though. Try a smaller number. You have ' + guessesLeft + ' more chances.');
   }
   else if (guessTally < stadiumTally) {
-    alert('I\'ve been to a few more stadiums than that. But you\'re not so far off. You have ' + guessesLeft + ' remaining.')
+    alert('I\'ve been to a few more stadiums than that. But you\'re not so far off. You have ' + guessesLeft + ' more guesses.')
   }
   else {
     alert('My, oh my! You got it right! Congratulations!');
@@ -127,30 +127,32 @@ console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAs
 
 //Question #7
 guessesLeft = 6;
+var guessNum = 0;
 
 while (guessesLeft > 0) {
-  var stadiumGuess = prompt('So I\'ve travelled to nine ballparks in my lifetime. Try to guess the which ones. To make it easier, I\'ll have you enter the team name instead of the stadium. For example, "Mariners" or "Pilots" would work.').toLowerCase;
+  var stadiumGuess = prompt('Let\'s move to the next and final question. So I\'ve travelled to nine (non-Seattle) ballparks in my lifetime. Try to guess which ones. To make it easier, I\'ll have you enter the team name instead of the stadium. For example, "Mariners" or "Pilots" would work.').toLowerCase();
   guessesLeft--;
+  guessNum++;
 
   if(stadiumsVisited.includes(stadiumGuess)) {
     alert('Wow, are you a mind-reader? You nailed it!');
-    guessesLeft=-1;
     correctAnswers++;
+    guessesLeft = -1;
   }
-  if(guessesLeft > 3) {
-    alert('Try again...');
+  if(guessesLeft > 2) {
+    alert('No, but that was only guess #' + guessNum + '. Try again...');
   }
-  if(guessesLeft === 3) {
-    alert('Never give up!');
+  if(guessesLeft === 2) {
+    alert('That was only your ' + guessNum + 'th guess. Never give up!');
   }
-  if(3 > guessesLeft > 0) {
-    alert('Keep trying...');
+  if(guessesLeft === 1) {
+    alert('You\'ve only tried ' + guessNum + ' times. I believe in you! Keep trying...');
   }
   if(guessesLeft === 0) {
-    alert('Ok, time to give up. The teams whose stadiums I\'ve visited are the Athletics, Giants, Padres, Indians, Cardinals, White Sox, Yankees, Brewers, and Cubs. Go Cubs, Go!')
+    alert('Never mind. In the immortal words of En Vogue, "you\'re never gonna get it." The teams whose stadiums I\'ve visited are the Athletics, Brewers, Cardinals, Giants, Indians, Padres, White Sox, Yankees, and most belovedly, the Cubs. Go Cubs, Go!')
   }
 }
 questionsAsked++;
 console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 
-alert('You got ' + correctAnswers + ' answers correct out of ' + questionsAsked + ' questions I asked. But now you know a little more about me. Thanks for playing along!');
+alert('You got ' + correctAnswers + ' answers correct out of ' + questionsAsked + ' questions I asked. But more importantly, you know a little more about me. Thanks for playing along!');
