@@ -97,7 +97,6 @@ console.log(stadiumsVisited);
 
 var stadiumTally = stadiumsVisited.length;
 var guessesLeft = 4;
-var goodGuess = false;
 console.log(stadiumTally);
 
 //Question #6
@@ -129,7 +128,7 @@ console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAs
 //Question #7
 guessesLeft = 6;
 
-While (guessesLeft > 0) {
+while (guessesLeft > 0) {
   var stadiumGuess = prompt('So I\'ve travelled to nine ballparks in my lifetime. Try to guess the which ones. To make it easier, I\'ll have you enter the team name instead of the stadium. For example, "Mariners" or "Pilots" would work.').toLowerCase;
   guessesLeft--;
 
@@ -151,7 +150,7 @@ While (guessesLeft > 0) {
     alert('Ok, time to give up. The teams whose stadiums I\'ve visited are the Athletics, Giants, Padres, Indians, Cardinals, White Sox, Yankees, Brewers, and Cubs. Go Cubs, Go!')
   }
 }
-  questionsAsked++;
-  console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
+questionsAsked++;
+console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 
-  alert('You got ' + correctAnswers + ' answers correct out of ' + questionsAsked + ' questions I asked. But now you know a little more about me. Thanks for playing along!');
+alert('You got ' + correctAnswers + ' answers correct out of ' + questionsAsked + ' questions I asked. But now you know a little more about me. Thanks for playing along!');
