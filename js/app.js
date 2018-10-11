@@ -89,6 +89,7 @@ if (princessBride === 'no' || princessBride === 'n') {
 }
 //alert('Now wasn\'t that an enriching experience? Haha, maybe we should let that be a rhetorical question!');
 
+//Question #6
 
 
 var stadiumsVisited = ['indians', 'giants', 'athletics', 'padres', 'white sox', 'yankees', 'cardinals', 'brewers', 'cubs'];
@@ -99,7 +100,6 @@ var stadiumTally = stadiumsVisited.length;
 var guessesLeft = 4;
 console.log(stadiumTally);
 
-//Question #6
 
 while (guessesLeft > 0) {
   var guessTally = parseInt(prompt('Obviously, I love baseball. Can you guess how many Major League Stadiums I\'ve visited (outside of Seattle)? You\'ve got ' + guessesLeft + ' chances.'));
@@ -121,6 +121,9 @@ while (guessesLeft > 0) {
     correctAnswers++;
     console.log('The user answered question 6 correctly.')
   }
+  if (guessesLeft === 0) {
+    alert('That\'s enough guessing. The correct answer is that I\'ve actually visited 9 stadiums outside of Seattle. I really need to travel more.')
+  }
 }
 questionsAsked++;
 console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
@@ -129,8 +132,10 @@ console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAs
 guessesLeft = 6;
 var guessNum = 0;
 
+alert('Let\'s move to the next and final question. So I\'ve travelled to nine (non-Seattle) ballparks in my lifetime.');
+
 while (guessesLeft > 0) {
-  var stadiumGuess = prompt('Let\'s move to the next and final question. So I\'ve travelled to nine (non-Seattle) ballparks in my lifetime. Try to guess which ones. To make it easier, I\'ll have you enter the team name instead of the stadium. For example, "Mariners" or "Pilots" would work.').toLowerCase();
+  var stadiumGuess = prompt('Try to guess which ones. To make it easier, I\'ll have you enter the team name instead of the stadium. For example, "Mariners" or "Pilots" would work.').toLowerCase();
   guessesLeft--;
   guessNum++;
 
