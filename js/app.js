@@ -89,6 +89,7 @@ q3();
 
 //Q4
 
+function q4() {
 var princessBride = prompt('Is it ever possible to overquote, "The Princess Bride"?').toLowerCase();
 
 if (princessBride === 'no' || princessBride === 'n') {
@@ -103,6 +104,10 @@ if (princessBride === 'no' || princessBride === 'n') {
   console.log('The user got question 5 incorrect.');
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 }
+}
+q4();
+
+
 //alert('Now wasn\'t that an enriching experience? Haha, maybe we should let that be a rhetorical question!');
 
 //Question #6
