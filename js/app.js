@@ -150,8 +150,8 @@ While (guessesLeft > 0) {
   if(guessesLeft === 0) {
     alert('Ok, time to give up. The teams whose stadiums I\'ve visited are the Athletics, Giants, Padres, Indians, Cardinals, White Sox, Yankees, Brewers, and Cubs. Go Cubs, Go!')
   }
+}
   questionsAsked++;
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
-  
-  alert('You got ' + correctAnswers + ' answers correct out of ' + questionsAsked + ' questions I asked. But now you know a little more about me. Thanks for playing along!')
-}
+
+  alert('You got ' + correctAnswers + ' answers correct out of ' + questionsAsked + ' questions I asked. But now you know a little more about me. Thanks for playing along!');
