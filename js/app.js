@@ -33,6 +33,9 @@ if (ballPlayer === 'yes' || ballPlayer === 'y') {
 } 
 q1();
 
+//Q2
+
+function q2() {
 var homeRun = prompt('Did I ever hit a homerun in my high school playing days?').toLowerCase();
 
 if (homeRun === 'no' || homeRun === 'n') {
@@ -47,6 +50,11 @@ if (homeRun === 'no' || homeRun === 'n') {
   console.log('The user got question 2 wrong.');
   console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 }
+}
+q2();
+
+//Q3
+
 
 var marinersFan = prompt('Are the Mariners my favorite MLB team?').toLowerCase();
 
