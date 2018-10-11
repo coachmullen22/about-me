@@ -113,12 +113,9 @@ if (princessBride === 'no' || princessBride === 'n') {
 }
 q5();
 
-
-//alert('Now wasn\'t that an enriching experience? Haha, maybe we should let that be a rhetorical question!');
-
 //Question #6
 
-
+function q6() {
 var stadiumsVisited = ['indians', 'giants', 'athletics', 'padres', 'white sox', 'yankees', 'cardinals', 'brewers', 'cubs'];
 console.log(stadiumsVisited);
 //console.log(stadiumsVisited.length);
@@ -152,10 +149,13 @@ while (guessesLeft > 0) {
     alert('That\'s enough guessing. The correct answer is that I\'ve actually visited 9 stadiums outside of Seattle. I really need to travel more.')
   }
 }
+}
+q6();
 questionsAsked++;
 console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
 
 //Question #7
+
 guessesLeft = 6;
 var guessNum = 0;
 
