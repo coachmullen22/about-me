@@ -1,21 +1,11 @@
-* {
-    border: 2px solid red;
-    border-width: 2px;
-}
-
-body header {
+header {
     background: rgba(52, 19, 112, 0.37);
     color: rgb(56, 15, 15);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 110%;
     outline-color: rgb(153, 56, 11);
     margin: 50px, 50px;
-}
-
-header p {
     text-align: center;
-    box-sizing: 250px, 250px;
-    padding: 50px, 50px;
 }
 
 header {
@@ -23,23 +13,26 @@ header {
     border-color: blue;
     border-width: 10px;
     font-size: 36px;
+    text-align: center;
     text-shadow: 0px, 4px, 0px, rgb(100, 52, 7)
 }
 
 p {
+    padding: 50px, 50px;
     font-size: 24px;
+}
+
+ol{
+    list-style: decimal;
+    padding: 5px;
+}
+
+ul{
+    list-style: circle;
 }
 
 li {
     font-size: 18px;
-    border: 1px solid black;
-    padding: 5px, 5px;
+    padding: 15px, 15px;
     list-style-position: inside;
-}
-ol{
-    list-style: decimal;
-
-}
-ul{
-    list-style: circle;
 }
