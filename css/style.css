@@ -1,16 +1,11 @@
-header {
-    background: rgba(52, 19, 112, 0.37);
-    color: rgb(56, 15, 15);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 110%;
-    outline-color: rgb(153, 56, 11);
-    margin: 50px, 50px;
-    text-align: center;
+body {
+    background-color: blanchedalmond;
+
 }
 
 header {
     border-style: double;
-    border-color: blue;
+    border-color: rgb(128, 104, 104);
     border-width: 10px;
     font-size: 36px;
     text-align: center;
@@ -35,4 +30,18 @@ li {
     font-size: 18px;
     padding: 15px, 15px;
     list-style-position: inside;
+}
+#resume {
+    text-align: center;
+}
+#goals {
+    display: inline-block;
+}
+#long-term {
+    display: inline;
+    width: 40%;
+}
+#short-term {
+    display: inline;
+    width: 40%;
 }

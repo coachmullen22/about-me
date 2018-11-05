@@ -13,7 +13,7 @@ alert('To get the best results, please answer with either a "yes" or a "no". Or 
 // Q1
 
 function q1() {
-  var ballPlayer = prompt('Let\'s start easy. Do I look like a baseball player?').toLowerCase();
+  var ballPlayer = prompt('Let\'s start easy. Do I look like a baseball player?');
 
   if (ballPlayer === 'yes' || ballPlayer === 'y') {
     alert('You\'re right! My favorite place in the world is on the diamond!');
@@ -27,7 +27,7 @@ function q1() {
     console.log('The user got question 1 wrong.');
     console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
   }
-} 
+}
 q1();
 
 //Q2
@@ -66,8 +66,8 @@ function q3() {
     questionsAsked++;
     console.log('The user answered question 3 incorrectly');
     console.log('The user has answered ' + correctAnswers + ' out of ' + questionsAsked + ' questions correctly.');
-  } 
-} 
+  }
+}
 q3();
 
 //Q4
@@ -135,7 +135,7 @@ function q6() {
     }
     else if (guessTally < stadiumTally) {
       alert('I\'ve been to a few more stadiums than that. But you\'re not so far off. You have ' + guessesLeft + ' more guesses.')
-    } 
+    }
     else {
       alert('My, oh my! You got it right! Congratulations!');
       guessesLeft = -1;
